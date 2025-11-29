@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSans.className} antialiased flex flex-col min-h-screen `} // Add Open Sans here
+        className={`${geistSans.variable} ${geistMono.variable} ${openSans.className} antialiased flex flex-col h-screen overflow-hidden`} // Add Open Sans here
       >
         <TodoProvider>
           <CategoryProvider>
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
                 {/* Header */}
                 <Header />
                 {/* Main Content */}
-                <main className="min-h-screen ">
+                <main className="min-h-screen overflow-hidden">
                   <span className="text-black opacity-30 pointer-events-none fixed z-0 top-1/2 left-1/2 font-bold text-4xl -translate-x-1/2 translate-y-1/2">
                     Crafted with Passion & Precision
                   </span>
